@@ -1,5 +1,5 @@
 # TC1001S - Herramientas Computacionales
-Sample code for the Computer Tools course challenge
+Computer Tools course challenge
 
 Author: Gilberto Echeverria
 
