@@ -5,7 +5,7 @@ Exercises
 1. How do you make the snake faster or slower?
 2. How can you make the snake go around the edges?
 3. How would you move the food?
-4. Change the snake to respond to arrow keys.
+4. Change the snake to respond to arrow keys (this was already controled by the arrows, so we made it with the w,a,s,d keys.
 
 """
 
@@ -14,8 +14,8 @@ from random import randrange
 from freegames import square, vector
 
 food = vector(0, 0)
-snake = [vector(10, 0)]
-aim = vector(0, -10)
+snake = [vector(20, 0)]
+aim = vector(0, -20)
 
 def change(x, y):
     "Change snake direction."
@@ -30,6 +30,7 @@ def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
+
 
     if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'red')
@@ -58,9 +59,9 @@ setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
+onkey(lambda: change(10, 0), 'd')
+onkey(lambda: change(-10, 0), 'a')
+onkey(lambda: change(0, 10), 'w')
+onkey(lambda: change(0, -10), 's')
 move()
 done()
