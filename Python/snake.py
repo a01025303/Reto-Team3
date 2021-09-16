@@ -8,7 +8,6 @@ Exercises
 4. Change the snake to respond to arrow keys (this was already controled by the arrows, so we made it with the w,a,s,d keys.
 
 """
-
 from turtle import *
 from random import randrange
 from freegames import square, vector
@@ -24,7 +23,7 @@ def change(x, y):
 
 def inside(head):
     "Return True if head inside boundaries."
-    return -200 < head.x < 190 and -200 < head.y < 190
+    return -200 <= head.x <= 190 and -200 <= head.y <= 190
 
 def move():
     "Move snake forward one segment."
