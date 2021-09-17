@@ -23,5 +23,9 @@ Changes made by teammates
 
 - Patricio Bosque Rosas:
 	- Pacman: Added two aditional ghosts
-	- Snake: changed moving keys to 'w', 's', 'a' and 'd'
+	- Snake: Changed moving keys to 'w', 's', 'a' and 'd'
 	- Cannon: Changed cannonball speed
+- Nelson Osdani Juárez Duarte:
+	- Pacman: Change the speed of the ghost
+	- Snake: Changed the spawn of the food to be more far
+	- Cannon: Add score so it count when you hit a target
