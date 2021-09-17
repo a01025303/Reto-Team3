@@ -19,13 +19,14 @@ path = Turtle(visible=False)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
 pacman = vector(-40, -80)
+#To make a ghost faster we modificade the values of the second vector to doble to have double speed
 ghosts = [
-    [vector(-180, 160), vector(5, 0)],
-    [vector(-180, -160), vector(0, 5)],
-    [vector(100, 160), vector(0, -5)],
-    [vector(100, -160), vector(-5, 0)],
-    [vector(50, -160), vector(-5, 0)],
-    [vector(50, 160), vector(0, -5)]
+    [vector(-180, 160), vector(10, 0)],
+    [vector(-180, -160), vector(0, 10)],
+    [vector(100, 160), vector(0, -10)],
+    [vector(100, -160), vector(-10, 0)],
+    [vector(50, -160), vector(-10, 0)],
+    [vector(50, 160), vector(0, -10)]
 ]
     #Tiles modification: added some tiles to the right of the board
 tiles = [
@@ -130,11 +131,12 @@ def move():
         if valid(point + course):
             point.move(course)
         else:
+            #We also modified this vectors for the ghosts so they don't loss speed when they change their direction
             options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
+                vector(10, 0),
+                vector(-10, 0),
+                vector(0, 10),
+                vector(0, -10),
             ]
             plan = choice(options)
             course.x = plan.x
