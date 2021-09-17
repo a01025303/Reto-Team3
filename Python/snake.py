@@ -4,8 +4,8 @@ Exercises
 
 1. How do you make the snake faster or slower?
 2. How can you make the snake go around the edges?
-3. How would you move the food?
-4. Change the snake to respond to arrow keys (this was already controled by the arrows, so we made it with the w,a,s,d keys.
+3. How would you move the food?              (changing the values so the food apears more far than usual (this change was made by Nelson Osdani))
+4. Change the snake to respond to arrow keys (this was already controled by the arrows, so we made it with the w,a,s,d keys).
 
 """
 from turtle import *
@@ -40,8 +40,8 @@ def move():
 
     if head == food:
         print('Snake:', len(snake))
-        food.x = randrange(-15, 15) * 10
-        food.y = randrange(-15, 15) * 10
+        food.x = randrange(-10, 10) * 20
+        food.y = randrange(-10, 10) * 20
     else:
         snake.pop(0)
 
