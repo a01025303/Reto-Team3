@@ -3,7 +3,7 @@
 Exercises
 
 1. How do you make the snake faster or slower?
-2. How can you make the snake go around the edges?
+2. How can you make the snake go around the edges? (changed the "inside" boundaries slightly to allow this)
 3. How would you move the food?              (changing the values so the food apears more far than usual (this change was made by Nelson Osdani))
 4. Change the snake to respond to arrow keys (this was already controled by the arrows, so we made it with the w,a,s,d keys).
 
