@@ -20,3 +20,8 @@ Changes made by teammates
 	- Pacman: Changed board tile configuration (expanded board to the right)
 	- Snake: Slightly expanded the boundaries to allow snake to touch the edges (new boundary is after touching edges)
 	- Cannon: Simulated the effect of gravity in the targets by adding slight movement in y axis  
+
+-Patricio Bosque Rosas:
+	-Pacman: Added two aditional ghosts
+	-Snake: changed moving keys to 'w', 's', 'a' and 'd'
+	-Cannon: Changed cannonball speed
