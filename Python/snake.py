@@ -21,6 +21,7 @@ def change(x, y):
     aim.x = x
     aim.y = y
 
+# Changed boundaries to allow snake to touch edges --> used <= instead of <
 def inside(head):
     "Return True if head inside boundaries."
     return -200 <= head.x <= 190 and -200 <= head.y <= 190
