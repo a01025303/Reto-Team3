@@ -27,6 +27,7 @@ ghosts = [
     [vector(50, -160), vector(-5, 0)],
     [vector(50, 160), vector(0, -5)]
 ]
+    #Tiles modification: added some tiles to the right of the board
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0,
