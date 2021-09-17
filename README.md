@@ -7,6 +7,7 @@ Authors:
 - Nelson Osdani
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
+
 Games edited by the team:
 - Snake
 - Pacman
